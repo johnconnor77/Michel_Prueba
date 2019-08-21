@@ -3,16 +3,16 @@
 //   
 // Description: This program creates a simple command-line shell. 
 //      1. It will display a simple prompt as shown:
-//              prompt>
+//              ($)
 //      2. It will exit with status 0 when the user enters 'exit'.
 //         It will cause a segmentation fault when the user enters
 //         'explode' by calling fclose(NULL).
 //      3. It will assume the command entered is one word with no
 //         spaces or options.  
 //         Therefore, it can handle:
-//              prompt> ls
+//              ($) ls
 //         But is not required to handle:
-//              prompt> ls - l
+//              ($) ls - l
 //      4. It will assume commands are less than 80 characters.
 //      5. If an error occurs during fork or exec, a meaningful
 //         error message will be displayed to the user, but the 
@@ -107,7 +107,7 @@ int main(int argc, char * argv[])
         while (TRUE){
 
                 // Print the prompt
-                printf("$ ");
+                printf("($) ");
 
                 // Get the input from the terminal
                 fgets(buffer, BUFF_SIZE, stdin);
