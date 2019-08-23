@@ -49,6 +49,7 @@
 void handler(int signum)
 {
         switch (signum) {
+                        // Testing signals, just mandatory SIGINT, need to be corrected exit from it
                 case SIGSEGV:
                         fprintf(stderr, "A segmentation fault has been detected.\n");
                         fprintf(stderr, "Exiting...\n");
@@ -109,8 +110,8 @@ int main(int argc, char * argv[])
                 // Print the prompt
                 printf("($) ");
 
-                // Get the input from the terminal
-                fgets(buffer, BUFF_SIZE, stdin);
+                // Get the input from the terminal, has to be replaced
+                fgets(buffer, BUFF_SIZE, stdin); 
 
                 // Handle just a carriage return
                 if (!strncmp(buffer, "\n", 1)){
@@ -141,7 +142,7 @@ int main(int argc, char * argv[])
                         // Exec based on the command
                         } else if (pid == 0) {
                                 errno = 0;
-                                execlp(buffer, buffer, NULL);
+                                execlp(buffer, buffer, NULL); // remind replace this one with path finder
                                 perror("Exec failed");
                                 
                                 // Handle exit command while in child
