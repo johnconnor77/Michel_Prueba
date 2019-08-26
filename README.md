@@ -32,7 +32,7 @@ After compilation, the shell can be run with this command:
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
 * **Caroll Hudgson ** - *Initial Work and Documentation* - [caroll1889](https://github.com/Caroll1889)
-* **Fulanito Detal** - *Initial Work and Documentación* - [johnconnor77](https://github.com/johnconnor77)
+* **Juan F. Calle** - *Initial Work and Documentación* - [johnconnor77](https://github.com/johnconnor77)
  
 
 ## Licensing
