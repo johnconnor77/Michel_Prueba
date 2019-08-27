@@ -33,9 +33,5 @@ After compilation, the shell can be run with this command:
 * **Juan F. Calle** - *Initial Work and Documentación* - [johnconnor77](https://github.com/johnconnor77)
  
 
-## Licensing
 
-Simple Shell is lincesed under the MIT License
-
----
 
